@@ -17,6 +17,8 @@ gem 'pry-byebug'
 
 gem 'shotgun', '~>0.9.1'
 
+gem 'bcrypt', '~>3.1.11'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
