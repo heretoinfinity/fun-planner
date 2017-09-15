@@ -1,0 +1,7 @@
+<form method="post" action="/login">
+  <label> Email <input name="user[email]" type="email"></label>
+  <label> Password <input name="user[password]" type="password"></label>
+  <input value="Log in" type="submit">
+</form>
+
+<%= erb :"partials/_errors" %>

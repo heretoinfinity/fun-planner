@@ -1,0 +1,9 @@
+<%= erb :"partials/_errors" %>
+
+<form method="post" action="/users">
+  <label> Email <input name="user[email]" type="email"></label>
+  <label> Username <input name="user[username]" type="text"></label>
+  <label> Password <input name="user[password]" type="password"></label>
+  <input value="Register" type="submit">
+</form>
+
