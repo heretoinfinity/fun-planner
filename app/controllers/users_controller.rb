@@ -1,12 +1,9 @@
-# get '/users' do
-#   if logged_in? && current_user
-#     @users = User.all #define instance variable for view
-#     erb :'users/index' #show all users view (index)
-#   else
-#     @errors = ["You need to be logged in"]
-#     erb :index
-#   end
-# end
+get '/users' do
+  # require_user
+
+  @users = User.all #define instance variable for view
+  erb :'users/index' #show all users view (index)
+end
 
 # # get '/users/new' do
 # #   unless logged_in? && current_user

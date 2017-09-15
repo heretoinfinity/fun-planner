@@ -1,0 +1,8 @@
+<% if @users %>
+  <ul id="list-of-all-users">
+    <% @users.order(id: :asc).each do |user| %>
+     <a href="/users/<%=user.id%>" ><li> <%= user.username %> </li></a>
+    <% end %>
+  </ul>
+<% end %>
+
